@@ -5,6 +5,24 @@ body {
 	background: #EEEEEE;
 	font-size: 16px;
 }
+footer {
+	color: rgba(255,255,255,.7);
+	background: #22BCE0;
+	text-align: center;
+	padding: 1em;
+}
+footer p:first-child {
+	margin-bottom: 0;
+}
+footer p:last-child {
+	margin-top: 0;
+}
+footer p:last-child:after {
+	content: " -"
+}
+footer p:last-child:before {
+	content: "- "
+}
 header {
 	background: #343B54;
 	color: white;
@@ -13,28 +31,26 @@ header {
 	position: relative;
 }
 header figure {
-	float:left;
-	margin:0;
+	float: left;
+	margin: 0;
 }
 header h1 {
-	font-size: 3em;
-	font-weight: normal;
+	float: left;
 	font-family: 'Fjalla One', sans-serif;
-	margin: .2em 0 0 .5em;
-	float: left;
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 0.2em 0 0 .3em;
 }
-header h2 {
-	margin: 1.5em 0 0 0;
-	float: left;
-	padding-left: .5em;
+header h1 p {
+	display: inline-block;
+	font-size: .8em;
 }
-
 header .avatar img{
 	border-radius: 50%;
-	width: 3.3em;
+	width: 2.5em;
 }
 header .avatar {
-	margin:1em 1em 0 0;
+	margin: 1em 1em 0 0;
 	position: absolute;
 	right: 0;
 	top:0;
@@ -42,6 +58,116 @@ header .avatar {
 header .logo img {
 	border-right: 1px solid white;
 	margin: 0;
-	padding-right: 1em;
-	width: 4em;
+	padding-right: .5em;
+	width: 2.5em;
 }
+nav {
+	background: #80BCA3;
+	margin: 0;	
+	padding: 0 1.1em;
+	position: relative;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul .publicar {
+	position: absolute;
+	right: 0;
+	top:-0.3em;
+}
+nav ul .publicar a {
+	background: #22BCE0;
+	border-radius: 0.2em;
+	box-shadow: rgba(0,0,0,0.6) 5px 5px 20px;
+	font-style: italic;
+	padding: 0.8em;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.6) 2px 2px 5px; 
+}
+nav ul li {
+	display: inline-block;
+	font-size: .8em;
+	margin: 0 .5em 0 0;
+}
+nav ul li a {
+	color: white;
+	display: block;
+	padding: 0.5em 0;
+	text-decoration: none; 
+}
+
+.section {
+	margin: .5em;
+}
+.section .item {
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	min-height: 128px;
+	position: relative;
+	margin-bottom: 3em;
+}
+.section .item .autor_item {
+	color: #AAA;
+	margin-left: 7em;
+}
+.section .item .datos_item {
+	text-align: right;
+	margin: 1em 1em 0 7em;
+	padding-bottom: 0.7em;
+}
+.section .item .datos_item .fecha_item {
+ color: #AAA;
+}
+.section .item .datos_item .tag_item {
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+.section .item .imagen_item {
+	float: left;	
+	margin: 0 1em 0 0;
+}
+.section .item .imagen_item img {
+	width: 96px;
+}
+.section .item .titulo_item {
+	font-size: 1.2em;
+	font-style: italic;
+	padding: 0.5em 0.4em 0 0;
+}
+.section .item .titulo_item a {
+	color: #444;
+	text-decoration: none;
+}
+.section .item .votacion {
+	background: white;
+	border-radius: 0 0 0.2em 0.2em;
+	left: 5%;
+	margin-top: 3px;
+	padding: 0.2em;
+	position: absolute;
+	top: 100%;
+	width: 90%;
+}
+.section .item .votacion .comentarios_item,
+.section .item .votacion .guardar_item {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
